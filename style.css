@@ -8,16 +8,12 @@ body {
     color: #222;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
     background: #222;
-    position: sticky;
-    top: 0;
-    z-index: 10;
 }
 
 .logo {
@@ -41,7 +37,6 @@ body {
     color: #7c5cff;
 }
 
-/* Hero */
 .hero {
     min-height: 75vh;
     display: flex;
@@ -56,4 +51,115 @@ body {
     max-width: 650px;
 }
 
-.small
+.small-text,
+.section-title {
+    color: #7c5cff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #7c5cff;
+}
+
+.hero h2 {
+    font-size: 28px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 28px;
+    background: #7c5cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.profile-placeholder {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: white;
+    border: 6px solid #7c5cff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+
+.about {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2 {
+    font-size: 40px;
+}
+
+.about p,
+.contact p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.skills {
+    padding: 80px 8%;
+    text-align: center;
+    background: #f3f0ff;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.skill-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.skill-card h3 {
+    color: #7c5cff;
+}
+
+.skill-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.projects {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:
