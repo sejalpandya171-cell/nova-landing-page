@@ -1,16 +1,26 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    color: #222;
+    background-color: #ffffff;
 }
 
+
+/* Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 20px 50px;
-
+    padding: 20px 8%;
     background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -27,392 +37,75 @@ body {
 .nav-links a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-links a:hover {
     color: #7c5cff;
 }
 
-/* Hero Section */
 
+/* Hero */
 .hero {
     min-height: 80vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    text-align: center;
-
-    padding: 50px 20px;
-
+    gap: 70px;
+    text-align: left;
+    padding: 50px 8%;
     background-color: #f3f0ff;
 }
 
-
 .hero-content {
-    max-width: 700px;
+    max-width: 650px;
 }
 
-
-.small-text {
+.small-text,
+.section-title {
     color: #7c5cff;
-
     font-size: 14px;
-
     font-weight: bold;
-
     letter-spacing: 2px;
 }
 
-
 .hero h1 {
-    font-size: 60px;
-
-    line-height: 1.1;
-
-    margin: 20px 0;
-
-    color: #222;
+    font-size: 55px;
+    margin: 15px 0;
 }
-
 
 .hero h1 span {
     color: #7c5cff;
 }
 
-
-.hero-description {
-    font-size: 20px;
-
-    color: #555;
-
-    margin-bottom: 30px;
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
+.hero p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.7;
+}
 
 .btn {
     display: inline-block;
-
-    padding: 14px 30px;
-
+    margin-top: 15px;
+    padding: 14px 28px;
     background-color: #7c5cff;
-
     color: white;
-
     text-decoration: none;
-
     border-radius: 8px;
-
     font-weight: bold;
 }
-
 
 .btn:hover {
     background-color: #5c42d6;
 }
 
-/* Features Section */
 
-.features {
-    padding: 80px 8%;
-
-    text-align: center;
-
-    background-color: white;
-}
-
-
-.section-title {
-    color: #7c5cff;
-
-    font-size: 14px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-}
-
-
-.features h2 {
-    font-size: 40px;
-
-    margin: 10px 0;
-    
-    color: #222;
-}
-
-
-.section-description {
-    color: #666;
-
-    font-size: 18px;
-
-    margin-bottom: 40px;
-}
-
-
-/* Feature Cards */
-
-.feature-container {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
-
-    max-width: 1100px;
-
-    margin: auto;
-}
-
-
-.feature-card {
-    padding: 35px 25px;
-
-    background-color: #f8f7ff;
-
-    border-radius: 12px;
-
-    border: 1px solid #eeeeee;
-
-    transition: 0.3s;
-}
-
-
-.feature-card:hover {
-    transform: translateY(-8px);
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
-}
-
-
-.icon {
-    font-size: 40px;
-
-    margin-bottom: 15px;
-}
-
-
-.feature-card h3 {
-    font-size: 22px;
-
-    margin-bottom: 12px;
-
-    color: #333;
-}
-
-
-.feature-card p {
-    color: #666;
-
-    line-height: 1.7;
-}
-
-
-/* About Section */
-
-.about {
-    padding: 100px 8%;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 60px;
-
-    align-items: center;
-
-    background-color: #f3f0ff;
-}
-
-
-.about-text {
-    max-width: 600px;
-}
-
-
-.about-text h2 {
-    font-size: 42px;
-
-    color: #222;
-
-    margin: 10px 0 20px;
-}
-
-
-.about-text p {
-    color: #555;
-
-    font-size: 17px;
-
-    margin-bottom: 18px;
-}
-
-
-.about-box {
-    padding: 40px;
-
-    background-color: white;
-
-    border-radius: 15px;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-
-.about-box h3 {
-    font-size: 25px;
-
-    color: #7c5cff;
-
-    margin-bottom: 20px;
-}
-
-
-.about-box ul {
-    padding-left: 20px;
-}
-
-
-.about-box li {
-    margin-bottom: 12px;
-
-    color: #555;
-}
-
-/* Contact Section */
-
-.contact {
-    padding: 100px 20px;
-
-    text-align: center;
-
-    background-color: white;
-}
-
-.contact h2 {
-    font-size: 42px;
-
-    color: #222;
-
-    margin: 10px 0 20px;
-}
-
-.contact p {
-    color: #666;
-
-    font-size: 18px;
-
-    margin-bottom: 30px;
-}
-
-
-/* Footer */
-
-.footer {
-    padding: 30px 8%;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    gap: 20px;
-
-    background-color: #222;
-
-    color: white;
-}
-
-.footer-logo {
-    font-size: 24px;
-
-    font-weight: bold;
-}
-
-.footer p {
-    margin: 0;
-
-    color: #ccc;
-}
-
-.footer-links {
-    display: flex;
-
-    gap: 20px;
-}
-
-.footer-links a {
-    color: white;
-
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    color: #7c5cff;
-}
-
-/* Mobile Responsive Design */
-
-@media (max-width: 768px) {
-
-    .navbar {
-        flex-direction: column;
-
-        gap: 15px;
-
-        padding: 20px;
-    }
-
-
-    .nav-links {
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-
-    .hero-description {
-        font-size: 17px;
-    }
-
-
-    .feature-container {
-        grid-template-columns: 1fr;
-    }
-
-
-    .about {
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-    }
-
-
-    .about-text h2,
-    .contact h2 {
-        font-size: 32px;
-    }
-
-
-    .footer {
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-
-    .footer-links {
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-}
+/* Profile Placeholder */
+.profile-placeholder {
+    width: 200px;
+    height: 200px
