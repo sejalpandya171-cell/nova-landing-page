@@ -1,26 +1,23 @@
-/* General */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
     color: #222;
-    background-color: #ffffff;
 }
 
-
-/* Navigation */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background-color: #222;
+    background: #222;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .logo {
@@ -44,44 +41,19 @@ body {
     color: #7c5cff;
 }
 
-
-/* Hero Section */
+/* Hero */
 .hero {
-    min-height: 80vh;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 70px;
     padding: 50px 8%;
-    background-color: #f3f0ff;
+    background: #f3f0ff;
 }
 
 .hero-content {
     max-width: 650px;
 }
 
-.small-text,
-.section-title {
-    color: #7c5cff;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.hero h1 {
-    font-size: 55px;
-    margin: 15px 0;
-}
-
-.hero h1 span {
-    color: #7c5cff;
-}
-
-.hero h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #555
+.small
